@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- Defines an HTML5 document -->
+<html>
+<!-- Starts the HTML page -->
+<head>
+    <!-- Contains webpage information -->
+
+    <title>Nexora Diagnostic Centre</title>
+    <!-- Shows the title in the browser tab -->
+
+    <meta charset="UTF-8">
+    <!-- Supports special characters -->
+
+    <style>
+        /* Sets the basic webpage design */
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        /* Styles the centre heading */
+        header {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styles the navigation menu */
+        nav {
+            background-color: black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        /* Styles the navigation links */
+        nav a {
+            color: white;
+            margin: 10px;
+        }
+
+        /* Welcome section with background image */
+        .welcome {
+            background-image: url("dia.jpg");
+            background-size: cover;
+            background-position: center;
+            background-color: teal;
+            color: black;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Styles each content section */
+        section {
+            background-color: white;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        /* Styles the test table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Adds borders to table cells */
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Styles the footer */
+        footer {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+    <!-- Ends the CSS styling -->
+
+</head>
+<!-- Ends the head section -->
+
+<body>
+<!-- Contains visible webpage content -->
+
+<header>
+    <!-- Centre name and slogan -->
+    <h1>Nexora Diagnostic Centre</h1>
+    <p><i>Your Health, Our Priority</i></p>
+</header>
+
+<nav>
+    <!-- Links to different sections -->
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#tests">Tests</a>
+    <a href="#booking">Book a Test</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="welcome" id="home">
+    <!-- Welcome message and laboratory background -->
+    <h1>Welcome to Nexora</h1>
+    <b><p>Reliable Testing for Better Health</p></b>
+</div>
+
+<section id="about">
+    <!-- Information about the centre -->
+    <h2>About Us</h2>
+    <p>Nexora Diagnostic Centre aims to provide
+       accurate and reliable diagnostic services.</p>
+
+    <h3>Our Vision</h3>
+    <p>To support better health through timely testing.</p>
+
+    <h3>Our Services</h3>
+    <p>Modern laboratory facilities and convenient
+       diagnostic test booking.</p>
+</section>
+
+<section id="tests">
+    <!-- List of diagnostic tests -->
+    <h2>Tests Available</h2>
+
+    <ul>
+        <li>Blood Test</li>
+        <li>Complete Blood Count (CBC)</li>
+        <li>Blood Sugar Test</li>
+        <li>Thyroid Test</li>
+        <li>Urine Test</li>
+        <li>Vitamin D Test</li>
+    </ul>
+
+    <!-- Table showing test information -->
+    
+<h3>Test Information</h3>
+
+<table>
+    <tr>
+        <th>Test Name</th>
+        <th>Purpose</th>
+        <th>Sample Required</th>
+    </tr>
+
+    <tr>
+        <td>Blood Test</td>
+        <td>Checks general health</td>
+        <td>Blood Sample</td>
+    </tr>
+
+    <tr>
+        <td>Complete Blood Count (CBC)</td>
+        <td>Checks blood cells</td>
+        <td>Blood Sample</td>
+    </tr>
+
+    <tr>
+        <td>Blood Sugar Test</td>
+        <td>Measures blood glucose</td>
+        <td>Blood Sample</td>
+    </tr>
+
+    <tr>
+        <td>Thyroid Test</td>
+        <td>Checks thyroid function</td>
+        <td>Blood Sample</td>
+    </tr>
+
+    <tr>
+        <td>Urine Test</td>
+        <td>Checks urine for abnormalities</td>
+        <td>Urine Sample</td>
+    </tr>
+
+    <tr>
+        <td>Vitamin D Test</td>
+        <td>Measures vitamin D level</td>
+        <td>Blood Sample</td>
+    </tr>
+</table>
+
+</section>
+
+<section id="booking">
+    <!-- Form for requesting a test booking -->
+    <h2>Book a Diagnostic Test</h2>
+
+    <form>
+        <!-- Patient name -->
+        <label>Patient Name:</label><br>
+        <input type="text" placeholder="Enter your name"
+               required>
+        <br><br>
+
+        <!-- Patient email -->
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"
+               required>
+        <br><br>
+
+        <!-- Patient contact number -->
+        <label>Mobile Number:</label><br>
+        <input type="tel" placeholder="Enter mobile number">
+        <br><br>
+
+        <!-- Dropdown to select a test -->
+        <label>Select Test:</label><br>
+        <select>
+            <option>CBC</option>
+            <option>Blood Sugar</option>
+            <option>Thyroid Test</option>
+            <option>Urine Test</option>
+            <option>Vitamin D</option>
+        </select>
+        <br><br>
+
+        <!-- Button to submit the form -->
+        <input type="submit" value="Request Booking">
+        <input type="reset" value="Clear">
+    </form>
+
+    <!-- This sample form does not save booking details -->
+</section>
+
+<section id="contact">
+    <!-- Contact information -->
+    <h2>Contact Us</h2>
+
+    <p>Address: Jaipur, Rajasthan, India</p>
+    <p>Mobile: +91 98689 xxxx</p>
+    <p>Telephone: 0141 206 xxxx</p>
+
+    <!-- Email link -->
+    <p>Email:
+        <a href="mailto:info@nexora.example">
+            info@nexora.example
+        </a>
+    </p>
+</section>
+
+<footer>
+    <!-- Copyright information -->
+    <p>&copy; 2026 Nexora Diagnostic Centre</p>
+</footer>
+
+</body>
+<!-- Ends the webpage -->
+
+</html>
+<!-- Ends the HTML document -->
